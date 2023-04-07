@@ -90,7 +90,7 @@ function App() {
   return (
     <div className="w-full h-screen bg-white" >
      
-      <div className=' flex flex-col justify-center items-center p-2 w-full h-full'>
+      <div className=' flex flex-col justify-center items-center p-3 w-full h-full'>
 
         <div className='max-w-[400px] w-full bg-gray-600 rounded-lg '>
                 <div className='py-3'>
@@ -129,9 +129,20 @@ function App() {
 
                 <button onClick={handleGeneratePassword} type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium my-2  text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Genearate</button>
              
-
+                <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
 
                 </div>
+                <span className='text-gray-400 flex items-end justify-center mb-2 text-[9px]'> &copy;  <a href="https://github.com/anwarjunaidkm">github.com/anwarjunaidkm</a> </span>
                 
 
 
